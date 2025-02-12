@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'user_auth',
     'inventory',
+    'rest_framework_simplejwt',
 ]
 
 MIDDLEWARE = [
