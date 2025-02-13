@@ -1,3 +1,6 @@
 from django.contrib import admin
+from .models import PantryItem, FridgeItem, FreezerItem
 
-# Register your models here.
+admin.site.register(PantryItem)
+admin.site.register(FridgeItem)
+admin.site.register(FreezerItem)
