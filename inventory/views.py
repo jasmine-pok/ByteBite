@@ -16,7 +16,7 @@ class PantryItemListCreateView(generics.ListCreateAPIView):
     
     # assigns the item to the logged-in user
     def perform_create(self, serializer):
-        serializer.save(user=self.reqest.user)
+        serializer.save(user=self.request.user)
 
 class PantryItemDetailView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = PantryItemSerializer

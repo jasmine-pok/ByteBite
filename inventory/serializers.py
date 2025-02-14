@@ -5,16 +5,17 @@ from .models import PantryItem, FridgeItem, FreezerItem
 class PantryItemSerializer(serializers.ModelSerializer):
     class Meta:
         model = PantryItem
-        fields = '__all__'
+        exclude = ('user',)
 
 # Serializer for FridgeItem model
 class FridgeItemSerializer(serializers.ModelSerializer):
     class Meta:
         model = FridgeItem
-        fields = '__all__'
+        exclude = ('user',)
 
 # Serializer for FreezerItem model
 class FreezerItemSerializer(serializers.ModelSerializer):
     class Meta:
         model = FreezerItem
-        fields = '__all__'
+        exclude = ('user',)
+        
